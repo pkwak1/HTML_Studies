@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Forms just front-end
+No back end for actual submission to database
+Format:
+<form action="/my-form-submitting-page" method="post"
+  action = the URL to send form data to
+  method = type of HTTP Request
+-->
+
+<!--
+input is how form reads in info
+input type = something (lots of types on MDN)
+inputs and forms can exist without each other
+BUT a form tag encapsulates input tags
+together they make a form
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms!</title>
+  </head>
+  <body>
+
+    <h1>Login Page</h1>
+<!-- name sends query string (separated by ?, with key value pairs)
+     type determines how front end displays info
+     placeholder is already existent, and not interactable
+-->
+    <form action="http://wikipedia.org" method="GET">
+      <input name="username" type="text" placeholder="username">
+      <input name="password" type="password" placeholder="password">
+      <input type="submit">
+    </form>
+    
+    <!-- sent request using form,
+    in that request, data was extracted and
+    sent along with request (username and passwd) -->
+  </body>
+
+</html>
