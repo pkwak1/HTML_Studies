@@ -1,0 +1,43 @@
+<!-- radio button
+     select tag
+     textarea tag -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inputs Demo</title>
+  </head>
+  <body>
+
+    <p>Do you prefer cats or dogs?</p>
+    <form>
+      <!-- if radio buttons given same name
+      you cannot choose both, only 1 choice -->
+      <label for="dogs">Dogs: </label>
+      <input name="petChoice" id="dogs"
+      type="radio" value="DOGS">
+
+      <label for="cats">Cats: </label>
+      <input name="petChoice" id="cats"
+      type="radio" value="CATS">
+      <!-- value allows name var to equal value-->
+
+      <!-- Drop Down Menu = select -->
+      <p>Fav color?</p>
+      <select name="color">
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+      </select>
+
+
+      <!-- Text box -->
+      <textarea name="paragraph" rows="10" cols="10"></textarea>
+
+      <!-- Button reloads webpage -->
+      <button>Go!</button>
+    </form>
+
+  </body>
+</html>
